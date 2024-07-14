@@ -1,0 +1,175 @@
+@import "https://fonts.googleapis.com/css2?family=Lalezar&amp;family=Poppins:wght@100;200;300;400;500;600;700;800&amp;display=swap";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Lalezar, cursive, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 80vh;
+  background: #6320ee;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 36px -5px #b8b8ff;
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 2px solid #6320ee;
+}
+
+.wrapper .text-input {
+  display: block;
+}
+
+.text-input .to-text {
+  border-radius: 0px;
+  border-top: 2px solid seagreen;
+}
+
+.text-input textarea {
+  height: 210px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize:both;
+  background:floralwhite;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 0.3rem;
+}
+
+.text-input textarea::placeholder {
+  color: blueviolet;
+}
+
+.controls,
+li,
+.icons,
+.icons ion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+  border-top: 1px solid #ccc;
+}
+
+.controls .row .icons {
+  width: 38%;
+}
+
+.controls .row .icons ion-icon {
+  width: 50px;
+  color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid blue;
+}
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid black;
+}
+.controls .row select {
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+.text-input textarea::-webkit-scrollbar {
+  width: 4px;
+}
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.controls .exchange {
+  color: brown;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: transform 0.2s ease;
+}
+.controls ion-icon:active {
+  transform: scale(0.9);
+}
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  background:mediumvioletred;
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid black;
+  }
+  .text-input textarea {
+    height: 200px;
+  }
+  .controls .row .icons {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .container button {
+    padding: 13px;
+    font-size: 1.2rem;
+  }
+  .controls .row select {
+    font-size: 1.2rem;
+  }
+  .controls .exchange {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    zoom: 0.7;
+  }
+}
