@@ -1,0 +1,2 @@
+# Translation Application Using Html-CSS-JavaScript
+ A Translation Application built with HTML, CSS, and JavaScript, offering seamless real-time language translation. The intuitive interface ensures ease of use, while responsive design guarantees compatibility across devices. This application leverages JavaScript for dynamic content updates, making it a powerful tool for multilingual communication.
